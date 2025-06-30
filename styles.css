@@ -1,0 +1,12 @@
+body {
+  /*background-image: url(bg.png);*/
+  background-color: black;
+  color: white;
+  font-family: verdana;
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+p {
+}

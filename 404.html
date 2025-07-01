@@ -10,23 +10,35 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+        }
+        
+        .scrolling-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
             background: url("desire-blue-sky.png") 0 0 repeat-x;
             background-size: auto 100%;
             animation: scrollBackground 60s linear infinite;
+            z-index: -1;
         }
         
         @keyframes scrollBackground {
-            from { background-position: 0 0; }
-            to { background-position: -100% 0; }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
+        
         .error-text {
             font-size: 404px;
             color: white;
             font-family: Verdana;
-            margin: 0; /* Remove default paragraph margins */
-            line-height: 1; /* Prevents vertical spacing issues */
+            margin: 0;
+            line-height: 1;
             text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
         }
+        
         .link-overlay {
             position: fixed;
             top: 0;
@@ -39,6 +51,7 @@
     </style>
 </head>
 <body>
+    <div class="scrolling-bg"></div>
     <p class="error-text">404</p>
     <a class="link-overlay" href="/" title="Click anywhere to return home."></a>
 </body>

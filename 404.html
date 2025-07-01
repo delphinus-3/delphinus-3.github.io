@@ -17,17 +17,19 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 200%;
+            width: calc(200% + 736px);
             height: 100%;
-            background: url("desire-blue-sky.png") 0 0 repeat-x;
-            background-size: auto 100%;
-            animation: scrollBackground 60s linear infinite;
+            background: 
+                url("desire-blue-sky.png") 0 0 repeat-x,
+                url("desire-blue-sky.png") 736px 0 repeat-x;
+            background-size: 736px 100%;
+            animation: scrollBackground 20s linear infinite;
             z-index: -1;
         }
         
         @keyframes scrollBackground {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            100% { transform: translateX(-736px); }
         }
         
         .error-text {

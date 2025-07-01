@@ -2,33 +2,24 @@
 <html lang="en-US">
 	<head>
 		<title>404 Not Found</title>
-<!--
-		<link rel="stylesheet" href="../styles.css">	
-		<link rel="icon" type="image/png" href="../favicons/wumpa/1.png" id="icon">
-		<script src="../scripts/wumpa.js"></script> 
--->
+		<style>
+			body {
+				background-image: url("desire-blue-sky.png");
+				margin: 0;
+				height: 100vh;
+			}
+			.link-overlay {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1000;
+				cursor: pointer;
+			}
+		</style>
 	</head>
-
-	<style>
-		body{
-			background-image: url("desire-blue-sky.png");
-		}
-		
-		.page-link-overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1000;
-		cursor: pointer;
-	  }
-	</style>	
-<!--
 	<body>
-		<h4>There's nothing here right now.</h4>
-		<br><br>
-		<a href="../">Back to Home</a>
+		<a class="link-overlay" href="/"></a>
 	</body>
--->
 </html>

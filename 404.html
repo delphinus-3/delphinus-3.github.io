@@ -11,6 +11,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            animation: scrollBackground 60s linear infinite;
+        }
+		@keyframes scrollBackground {
+            from { background-position: 0 0; }
+            to { background-position: -100% 0; } /* Negative value scrolls left */
         }
         .error-text {
             font-size: 404px;

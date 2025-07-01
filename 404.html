@@ -3,27 +3,21 @@
 <head>
     <title>404 Not Found</title>
     <style>
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <title>404 Not Found</title>
-    <style>
         body {
-            background-image: url("desire-blue-sky.png"), url("desire-blue-sky.png");
-            background-repeat: repeat-x;
-            background-position: 0 0, 100% 0;
             margin: 0;
             height: 100vh;
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
+            background: url("desire-blue-sky.png") 0 0 repeat-x;
+            background-size: auto 100%;
             animation: scrollBackground 60s linear infinite;
         }
         
         @keyframes scrollBackground {
-            0% { background-position: 0 0, 100% 0; }
-            100% { background-position: -100% 0, 0 0; }
+            from { background-position: 0 0; }
+            to { background-position: -100% 0; }
         }
         .error-text {
             font-size: 404px;
